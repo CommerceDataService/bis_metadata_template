@@ -1,0 +1,964 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+body,
+.main,
+[role=main],
+.masthead,
+.site-footer {
+  background-image: none;
+}
+.wrapper {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  margin-bottom: 0px;
+}
+.masthead,
+.site-footer {
+  background-color: transparent;
+}
+[role=main] {
+  padding-top: 0;
+}
+h1,
+h2 {
+  font-size: 24.5px;
+  line-height: 1.3;
+}
+h3 {
+  font-size: 21px;
+  line-height: 1.3;
+}
+body,
+.main,
+[role=main] {
+  background: #d7e5f1;
+  padding-bottom: 0px;
+  /*
+  background: #bac9d4;
+  background: #f6f6f6;*/
+}
+#content {
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.toolbar {
+  background-color: white;
+  margin: 0;
+  border: 1px solid #CCC;
+  border-width: 0 1px;
+  padding: 10px;
+}
+.toolbar .add_action {
+  top: 8px;
+  right: 10px;
+}
+.page-header {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+a {
+  color: #284a7a;
+}
+.btn-primary {
+  color: white !important;
+  background: #284a7a !important;
+}
+.btn-primary:hover {
+  background: #1b3354 !important;
+}
+.faded {
+  color: #777;
+}
+.disclaimer {
+  padding-top: 10px;
+  clear: both;
+}
+.pre-header {
+  /*background: #0a3163 url("http://www.data.gov/sites/all/themes/datagov/images/preheader-bg.jpg") repeat-x center top;*/
+  color: white;
+  font-style: italic;
+  font-size: 11px;
+  font-family: "Lucida Bright", "Times New Roman", Times, serif;
+}
+.pre-header .container {
+  width: 920px;
+}
+.pre-header a img {
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+.masthead .container {
+  width: 940px;
+  margin-top: 0px;
+  background: #4f7ea6;
+  /*background: #6f91ae;
+  background: #226391;*/
+  /* DOC header
+  background: url("../images/head_commerce_small.png") no-repeat right top;
+  background-color: #dbdbdb;
+  */
+  /*
+  background: #b6d2e7;
+  background: #9cbcd4;
+  background: #ffffff url("../images/header-line.png?1") 100% 100% no-repeat;*/
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.masthead .container .top {
+  *zoom: 1;
+  position: relative;
+  background: #4f7ea6;
+  /*background: #6f91ae;
+  /*background: #226391;*/
+  /*
+  background: #b6d2e7;
+  background: #9cbcd4;
+  /*background: url("http://www.data.gov/sites/all/themes/datagov/images/header-start-bg.jpg");*/
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  height: 30px;
+}
+.masthead .container .top:before,
+.masthead .container .top:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.masthead .container .top:after {
+  clear: both;
+}
+.masthead .container .logo {
+  *zoom: 1;
+  float: left;
+  padding: 4px;
+  width: 540px;
+}
+.masthead .container .logo:before,
+.masthead .container .logo:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.masthead .container .logo:after {
+  clear: both;
+}
+.masthead .container .logo a {
+  display: block;
+  float: left;
+  height: 37px;
+  background-image: url("../images/datanoaagov_logo.png");
+  width: 325px;
+}
+.masthead .container .logo a span {
+  display: none;
+}
+
+.masthead .container .beta {
+  position: absolute;
+  top: 25px;
+  left: 470px;
+  background-color: #5881b0;
+  text-transform: uppercase;
+  padding: 3px 5px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.masthead .container .account-wrapper {
+  float: right;
+  padding: 6px 10px;
+}
+.masthead .container .account-wrapper .not-authed a {
+  /*color: #284a7a;*/
+  color: #F5F5F5;
+  font-weight: bold;
+  padding-left: 16px;
+  font-size: 12px;
+  /*background: transparent url("http://www.data.gov/sites/all/themes/datagov/images/icon-login.gif") 0 50% no-repeat;*/
+}
+.masthead .container .account-wrapper .not-authed a span {
+  text-decoration: underline;
+}
+.masthead .container .account-wrapper .authed .gravatar {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  vertical-align: -3px;
+}
+.masthead .container .account-wrapper ul {
+  *zoom: 1;
+}
+.masthead .container .account-wrapper ul:before,
+.masthead .container .account-wrapper ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.masthead .container .account-wrapper ul:after {
+  clear: both;
+}
+.masthead .container .account-wrapper ul li {
+  float: left;
+  border-left: 1px solid #c0cfe1;
+}
+.masthead .container .account-wrapper ul li a {
+  display: block;
+  padding: 0 5px;
+  color: #f1f1f1;
+}
+.masthead .container .account-wrapper ul li a:hover {
+  color: #4f7ea6;
+  background-color: #e2e9f2;
+  text-decoration: none;
+}
+.masthead .container .site-wide-search {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  margin: 7px 10px;
+}
+.masthead .container .site-wide-search input {
+    margin: 0;
+    border-width: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    width: 184px;
+    padding-left: 11px;
+    background: #F5F5F5;
+	/*background: url("http://www.data.gov/sites/all/themes/datagov/images/search-box-new.jpg");*/
+}
+.masthead .container .site-wide-search button {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    background: url("../images/search_new.png");
+	/*background: url("http://www.data.gov/sites/all/themes/datagov/images/search_new.png");*/
+	
+    background-repeat:no-repeat;
+    width: 25px;
+    height: 28px;
+    border-width: 0;
+    position:absolute;
+    top:1px;
+    right:2px;
+}
+.masthead .container .top-nav {
+  clear: both;
+  background-color: transparent;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+.masthead .container .top-nav nav ul {
+  *zoom: 1;
+}
+.masthead .container .top-nav nav ul:before,
+.masthead .container .top-nav nav ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.masthead .container .top-nav nav ul:after {
+  clear: both;
+}
+.masthead .container .top-nav nav ul li {
+  float: left;
+}
+.masthead .container .top-nav nav ul li a {
+  display: block;
+}
+.masthead .container .top-nav nav ul li a:hover {
+  text-decoration: none;
+}
+.masthead .container .top-nav .primary {
+  background: #284a7a url("../images/header-nav-bg.png");
+}
+.masthead .container .top-nav .primary ul li a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 35px;
+}
+.masthead .container .top-nav .primary ul li a:hover {
+  background-color: #5881b0;
+  border-left-color: #5881b0;
+}
+.masthead .container .top-nav .primary ul li a.root {
+  border-left: 1px solid #294B78;
+  border-right: 1px solid #0B3064;
+}
+.masthead .container .top-nav .primary ul li.active a {
+  background-color: #5881b0;
+  border-left-color: #5881b0;
+}
+.masthead .container .top-nav .primary ul li:first-child a.root {
+  border-left-width: 0;
+}
+.masthead .container .top-nav .primary ul li:hover .dropdown {
+  display: block;
+}
+.masthead .container .top-nav .primary ul li:hover .dropdown .dropdown {
+  display: none;
+}
+.masthead .container .top-nav .primary ul li.sub-dropdown:hover .dropdown {
+  display: block;
+}
+.masthead .container .top-nav .primary .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  margin-left: 1px;
+  background-color: #366c9f;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.masthead .container .top-nav .primary .dropdown li {
+  float: none;
+}
+.masthead .container .top-nav .primary .dropdown li .icon-caret-right {
+  float: right;
+  line-height: 35px;
+}
+.masthead .container .top-nav .primary .dropdown li.active a {
+  background-color: #5881b0;
+  border-left-color: #5881b0;
+}
+.masthead .container .top-nav .primary .dropdown.wide {
+  *zoom: 1;
+  width: 360px;
+}
+.masthead .container .top-nav .primary .dropdown.wide:before,
+.masthead .container .top-nav .primary .dropdown.wide:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.masthead .container .top-nav .primary .dropdown.wide:after {
+  clear: both;
+}
+.masthead .container .top-nav .primary .dropdown.wide ul {
+  width: 180px;
+  float: left;
+}
+.masthead .container .top-nav .primary .dropdown.communities {
+  margin-left: -217px;
+}
+.masthead .container .top-nav .primary .dropdown .dropdown {
+  left: 180px;
+  margin-top: -35px;
+  width: 290px;
+}
+.masthead .container .top-nav .secondary {
+  background-color: #3a74a5;
+  background-image: -moz-linear-gradient(top, #9abfde, #35658e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9abfde), to(#35658e));
+  background-image: -webkit-linear-gradient(top, #9abfde, #35658e);
+  background-image: -o-linear-gradient(top, #9abfde, #35658e);
+  background-image: linear-gradient(to bottom, #9abfde, #35658e);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9abfde', endColorstr='#ff35658e', GradientType=0);
+  font-family: 'Georgia';
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.masthead .container .top-nav .secondary span {
+  /*display: block;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 21px;
+}
+.masthead .container .top-nav .secondary span.under_development {
+  padding-left: 0px;
+  font-size: 14px;
+}
+
+
+.flash-messages {
+  padding: 10px;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  border-width: 0 1px;
+}
+.site-footer {
+  padding-top: 0;
+  text-align: center;
+}
+.footer-nav {
+  position: relative;
+  font-size: 12px;
+  padding-top: 30px;
+  
+  background-color: #d7e5f1;
+  background-image: -moz-linear-gradient(top, #d7e5f1, #6f91ae);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d7e5f1), to(#6f91ae));
+  background-image: -webkit-linear-gradient(top, #d7e5f1, #6f91ae);
+  background-image: -o-linear-gradient(top, #d7e5f1, #6f91ae);
+  background-image: linear-gradient(to bottom, #d7e5f1, #6f91ae);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd7e5f1', endColorstr='#ff6f91ae', GradientType=0);
+  
+  
+  
+}
+.footer-nav ul li {
+  display: inline;
+  padding: 0 10px;
+  border-right: 1px solid #999;
+}
+.footer-nav ul li a {
+  color: #f1f1f1;
+}
+
+.footer-nav ul li {
+  color: #f1f1f1;
+}
+
+.footer-nav ul li:last-child {
+  border-right-width: 0;
+}
+.footer-nav img {
+  margin: 20px 0;
+}
+.homepage .wrapper {
+  border-top-width: 0;
+  background-image: none;
+}
+.homepage .hero {
+  position: relative;
+  padding: 0;
+  margin: 0 9px 10px 9px;
+  background: url("../images/banner.jpg");
+  height: 301px;
+  overflow: hidden;
+}
+.homepage .intro {
+  color: #FFF;
+  padding: 20px;
+  width: 320px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.homepage .intro h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin: 10px 0 15px 0;
+}
+.homepage .search-box {
+  position: absolute;
+  margin: 0;
+  right: 130px;
+  bottom: 20px;
+  width: 400px;
+}
+.homepage .search-box input {
+  border: 3px solid #5881b0;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.homepage .search-box input:focus {
+  border-color: #000;
+}
+#hp-message {
+  margin: 10px;
+}
+#hp-message .alert {
+  margin: 0;
+}
+.format-label[data-format="ISO-19139"],
+.format-label[data-format*="ISO-19139"] {
+  background-position: 0 0;
+  background-image: url("../images/icon-iso-19139.png");
+}
+.format-label[data-format="FGDC"],
+.format-label[data-format*="FGDC"] {
+  background-position: 0 0;
+  background-image: url("../images/icon-fgdc.png");
+}
+.format-label[data-format="web page"],
+.format-label[data-format*="web page"],
+.format-label[data-format="data"],
+.format-label[data-format*="data"] {
+  width: 32px;
+  height: 35px;
+  background-position: -320px -62px;
+}
+.label[data-format="web page"],
+.label[data-format*="web page"],
+.label[data-format="data"],
+.label[data-format*="data"] {
+  background-color: #56A3D0;
+}
+.select2-helper {
+  position: relative;
+  top: -9px;
+}
+.select2-helper i {
+  line-height: 32px;
+}
+.module-content.collection-package {
+  padding-bottom: 0;
+}
+.module-content.collection-package h3 {
+  margin-top: 0;
+}
+.label[data-format=wms],
+.label[data-format*=wms] {
+  background-color: #f06f64;
+}
+.format-label[data-format=wms],
+.format-label[data-format*=wms] {
+  background-position: 0 0;
+  background-image: url("../images/icon-wms.png");
+}
+#search-helper-message {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  color: #FFF;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 15px;
+  width: 300px;
+  right: 0;
+  top: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.module-narrow #dataset-map-container {
+  height: 200px;
+}
+.module-content #dataset-map-container {
+  height: 250px;
+}
+#dataset-map-attribution {
+  font-size: 11px;
+  line-height: 1.5;
+}
+.module-narrow #dataset-map-attribution {
+  margin: 5px 8px;
+  color: #666;
+}
+.leaflet-draw-label-single {
+  display: none;
+}
+.leaflet-draw-label-subtext {
+  display: none;
+}
+#field-location {
+  width: 190px;
+}
+.select2-results .select2-no-results {
+  padding: 3px 6px;
+}
+#dataset-map-edit {
+  margin: 5px 8px;
+}
+#dataset-map-edit-buttons {
+  display: none;
+}
+.leaflet-control-draw-rectangle {
+  background-image: url("../images/pencil.png");
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.dataset-map-expanded #dataset-map {
+  position: absolute;
+  width: 940px;
+  height: 384px;
+  top: -384px;
+  left: -1px;
+  background-color: white;
+  border: 1px solid #CCC;
+  margin: 0;
+}
+.dataset-map-expanded #dataset-map #dataset-map-container {
+  height: 300px;
+}
+.dataset-map-expanded #dataset-map #dataset-map-attribution {
+  *zoom: 1;
+}
+.dataset-map-expanded #dataset-map #dataset-map-attribution:before,
+.dataset-map-expanded #dataset-map #dataset-map-attribution:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.dataset-map-expanded #dataset-map #dataset-map-attribution:after {
+  clear: both;
+}
+.dataset-map-expanded #dataset-map #dataset-map-attribution div {
+  float: left;
+  margin-right: 10px;
+}
+.dataset-map-expanded #dataset-map #dataset-map-edit-buttons {
+  display: block;
+  float: right;
+  padding: 10px;
+}
+.dataset-map-expanded #dataset-map #dataset-map-edit {
+  display: none;
+}
+.dataset-map-expanded #dataset-map .module-heading {
+  border-top-color: #000;
+}
+.dataset-map-expanded .wrapper {
+  margin-top: 383px;
+}
+.dataset-item {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom-width: 0;
+}
+.dataset-item .dataset-content {
+  padding: 0 0 30px 0;
+}
+.dataset-item .dataset-organization {
+  display: inline;
+  font-style: italic;
+}
+.dataset-item .notes div {
+  display: inline;
+}
+.dataset-item .notes .empty {
+  display: inline;
+  margin-bottom: 0;
+}
+.dataset-item .more {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  line-height: 14px;
+  background-color: transparent;
+  color: #666;
+}
+.dataset-item .more:hover {
+  color: #222;
+}
+.dataset-item .label:hover {
+  background-color: #333;
+}
+.dataset-item.has-organization .dataset-heading {
+  padding-right: 80px;
+}
+.dataset-item.has-organization .notes {
+  padding-right: 50px;
+}
+.results,
+.is-search-title {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.results strong:before,
+.is-search-title strong:before,
+.results:before,
+.is-search-title:before {
+  display: none;
+}
+.filter-list {
+  margin-bottom: 5px;
+}
+.context-info .module-content {
+  position: relative;
+  overflow: hidden;
+}
+.organization-type {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  top: -18px;
+  right: -54px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #666;
+}
+.organization-type[data-organization-type="federal"] {
+  background-color: #71999f;
+}
+.organization-type[data-organization-type="university"] {
+  background-color: #71769f;
+}
+.organization-type[data-organization-type="state"] {
+  background-color: #8e719f;
+}
+.organization-type[data-organization-type="tribal"] {
+  background-color: #9f718e;
+}
+.organization-type[data-organization-type="non-profit"] {
+  background-color: #9f7771;
+}
+.organization-type[data-organization-type="other"] {
+  background-color: #9f9a71;
+}
+.organization-type[data-organization-type="local"] {
+  background-color: #829f71;
+}
+.organization-type[data-organization-type="commercial"] {
+  background-color: #719f83;
+}
+#dataset-search {
+  margin-bottom: 0;
+}
+#dataset-search .results {
+  margin-top: 5px;
+}
+.control-order-by {
+  position: relative;
+  bottom: 0;
+  float: right;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.control-order-by select {
+  margin-bottom: 0;
+}
+.secondary .module {
+  margin: 10px 0;
+}
+.secondary .module .module-content.empty {
+  font-size: 13px;
+}
+.secondary .module .nav-item > a {
+  font-size: 13px;
+  padding: 5px 15px;
+}
+.secondary .module .nav-item.active > a:before {
+  height: 30px;
+  background-position: 0 50%;
+}
+.secondary .module .module-footer a {
+  font-size: 13px;
+  font-weight: normal;
+  color: #999;
+}
+.secondary .module .module-footer a:hover {
+  color: #000;
+}
+.secondary .module .module-heading .action {
+  color: #999;
+  text-decoration: none;
+  font-weight: normal;
+}
+.secondary .module .module-heading .action:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.secondary .module .module-heading .icon-filter,
+.secondary .module .module-heading .icon-globe {
+  display: none;
+}
+#debug-toggle,
+.masthead .debug {
+  color: #999;
+}
+.masthead .debug {
+  opacity: 0.6;
+}
+#debug {
+  text-align: left;
+  background-color: white;
+}
+.ie .dataset-resource-form .info-block {
+  padding-left: 0;
+}
+.ie7 .masthead .container .top-nav .primary {
+  width: 920px;
+}
+.ie7 .masthead .container .top-nav .primary .dropdown li .icon-caret-right {
+  position: absolute;
+  right: 10px;
+  margin-top: -10px;
+}
+.ie7 .toolbar .breadcrumb li {
+  background-image: url("../images/breadcrumb-slash-ie7.png");
+}
+.ie7 .dataset-map-expanded #dataset-map {
+  width: 938px;
+}
+.ie7 .search-giant input {
+  width: 96.5%;
+}
+.ie7 .dataset-resource-form .info-block {
+  position: relative;
+  clear: both;
+}
+.ie8 .masthead .container .account-wrapper ul li a {
+  white-space: nowrap;
+}
+.ie7 .control-order-by select,
+.ie8 .control-order-by select {
+  margin-top: 8px;
+}
+.ie7 .organization-type,
+.ie8 .organization-type {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  width: 85px;
+  height: 85px;
+  top: 0;
+  right: 0;
+  background-color: transparent !important;
+}
+.ie7 .organization-type span,
+.ie8 .organization-type span {
+  display: none;
+}
+.ie7 .organization-type[data-organization-type="federal"],
+.ie8 .organization-type[data-organization-type="federal"] {
+  background-image: url("../images/organization-type/federal.png");
+}
+.ie7 .organization-type[data-organization-type="university"],
+.ie8 .organization-type[data-organization-type="university"] {
+  background-image: url("../images/organization-type/university.png");
+}
+.ie7 .organization-type[data-organization-type="state"],
+.ie8 .organization-type[data-organization-type="state"] {
+  background-image: url("../images/organization-type/state.png");
+}
+.ie7 .organization-type[data-organization-type="tribal"],
+.ie8 .organization-type[data-organization-type="tribal"] {
+  background-image: url("../images/organization-type/tribal.png");
+}
+.ie7 .organization-type[data-organization-type="non-profit"],
+.ie8 .organization-type[data-organization-type="non-profit"] {
+  background-image: url("../images/organization-type/non-profit.png");
+}
+.ie7 .organization-type[data-organization-type="other"],
+.ie8 .organization-type[data-organization-type="other"] {
+  background-image: url("../images/organization-type/other.png");
+}
+.ie7 .organization-type[data-organization-type="local"],
+.ie8 .organization-type[data-organization-type="local"] {
+  background-image: url("../images/organization-type/local.png");
+}
+.ie7 .organization-type[data-organization-type="commercial"],
+.ie8 .organization-type[data-organization-type="commercial"] {
+  background-image: url("../images/organization-type/commercial.png");
+}
+.select2-default {
+  color: #595959 !important;
+}
+input::-webkit-input-placeholder {
+  color: #595959;
+}
+input::-moz-placeholder {
+  color: #595959;
+}
+input:-ms-input-placeholder {
+  color: #595959;
+}
+input:-moz-placeholder {
+  color: #595959;
+}
+.search-box-new {
+    position: absolute;
+    right: 245px;
+    margin: 27px 10px;
+}
+.search-box-new {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    margin: 5px 10px;
+}
+input.search-new{
+	background: #F5F5F5;
+    /*background: url("http://www.data.gov/sites/all/themes/datagov/images/search-box-new.jpg") repeat scroll 0 0 transparent;*/
+    border:0 none;
+    width:189px;
+}
+.search-box-new button{
+	background: url("../images/search_new.png");
+    /*background: url("http://www.data.gov/sites/all/themes/datagov/images/search_new.png") no-repeat scroll 0 0 transparent;*/
+    border: 0 none;
+    color: transparent;
+    font: 0px/0 a;
+    height: 28px;
+    text-shadow: none;
+    width: 25px;
+    position:absolute;
+    top:1px;
+    right:2px;
+}
+body{font-size:87.5%;}
+#dataset-map-attribution div a{text-decoration:underline;}
+.empty{color:#595959;}
